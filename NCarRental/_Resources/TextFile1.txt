@@ -1,0 +1,37 @@
+﻿/*
+            FbConnection c = new FbConnection(@"Server=localhost;User=SYSDBA;Password=admin;Database=E:\_DB\TESTDB.FDB");
+            FbCommand cmd = new FbCommand();
+            */
+            //valami
+            /*FbCommand cmd = new FbCommand("insert into TEST_TABLA(id) values (@id);");
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Add("@id", 5);
+
+            using (cmd.Connection = new FbConnection(c.ConnectionString))
+            {
+                
+                cmd.Connection.Open();
+                cmd.ExecuteNonQuery();
+            }*/
+            //valami
+            /*
+            using (cmd.Connection = new FbConnection(c.ConnectionString))
+            {
+                cmd.Connection.Open();
+                cmd.CommandText = "select * from admins";
+                using (FbDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        int id = reader.GetInt32(reader.GetOrdinal("name"));
+                        Console.WriteLine(id);
+                        Console.WriteLine(id);
+                        Console.WriteLine(id);
+
+                        Console.WriteLine("lekerdezes");
+                    }
+                }
+            }*/
+
+
+C:\Users\Norbert\Documents\Visual Studio 2015\Projects\NCarRental\NCarRental\resources
